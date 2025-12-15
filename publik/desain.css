@@ -1,0 +1,65 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0b0f1a; /* hitam kebiruan */
+background-image: url('https://www.python.org/static/community_logos/python-logo.png');
+background-repeat: no-repeat;
+background-position: right bottom;
+background-size: 220px;
+color: #c40808;
+}
+header {
+background: #0d6efd;
+padding: 15px 30px;
+position: sticky;
+top: 0;
+}
+nav a {
+color: rgb(89, 60, 128);
+margin-right: 20px;
+text-decoration: none;
+font-weight: bold;
+}
+section {
+padding: 60px 30px;
+}
+#hero {
+background: #f4f6f8;
+text-align: center;
+}
+.btn {
+display: inline-block;
+padding: 12px 20px;
+background: #198754;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+}
+#latihan input {
+padding: 10px;
+margin: 5px;
+}
+#latihan button {
+padding: 10px 15px;
+}
+#hasil {
+margin-top: 15px;
+font-weight: bold;
+}
+.team {
+display: flex;
+gap: 20px;
+}
+.card {
+border: 1px solid #ddd;
+padding: 15px;
+width: 200px;
+text-align: center;
+border-radius: 8px;
+}
+footer {
+background: #212529;
+color: white;
+text-align: center;
+padding: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyLearn — Pelatihan Python Dasar</title>
+  <link rel="stylesheet" href="desain.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#materi">Materi</a>
+      <a href="#latihan">Latihan</a>
+      <a href="#team">Tim</a>
+      <a href="#footer">Kontak</a>
+    </nav>
+  </header>
+
+
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>  Belajar Python Dasar Secara Interaktif</h1>
+    <p>Cocok untuk pemula, mahasiswa, dan pelajar</p>
+    <a href="#latihan" class="btn">Coba Latihan Sekarang</a>
+  </section>
+
+   <!-- latar belakang -->
+  <section>
+    <h1><b> <i>APA ITU PYTHON?</i> </b> </h1>
+    <p>Website PyLearn merupakan website satu halaman (landing page) yang terdiri dari beberapa bagian utama, yaitu navbar, hero section, materi Python dasar, latihan interaktif, profil tim, dan footer. Website ini dibangun menggunakan HTML sebagai struktur halaman, CSS sebagai pengatur tampilan, dan JavaScript sebagai pengelola interaksi pengguna.
+
+Latihan interaktif pada website ini mensimulasikan konsep pemrograman Python, seperti operasi penjumlahan, dengan memanfaatkan logika JavaScript. Hal ini bertujuan agar pengguna dapat memahami konsep dasar pemrograman meskipun Python tidak dijalankan secara langsung di sisi server.
+    </p>
+  </section>
+
+  <!-- MATERI -->
+  <section id="materi">
+    <h2>Materi Dasar Python</h2>
+    <ul>
+      <li>Variabel & Tipe Data</li>
+      <li>Input & Output</li>
+      <li>Percabangan (if-else)</li>
+      <li>Perulangan (for / while)</li>
+    </ul>
+    <pre><code>nama = input("Nama: ")
+print("Halo", nama)</code></pre>
+  </section>
+
+  <!-- LATIHAN INTERAKTIF -->
+  <section id="latihan">
+    <h2>Latihan Interaktif</h2>
+    <p>Masukkan dua angka untuk simulasi kode Python (penjumlahan)</p>
+
+    <input type="number" id="angka1" placeholder="Angka pertama" />
+    <input type="number" id="angka2" placeholder="Angka kedua" />
+    <button onclick="hitung()">Hitung</button>
+
+    <div id="hasil"></div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <h2>Tim Kami</h2>
+    <div class="team">
+      <div class="card">
+        <img src="https://via.placeholder.com/80" />
+        <h4>Nama Anggota 1</h4>
+        <p>Content</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/80" />
+        <h4>Nama Anggota 2</h4>
+        <p>Frontend</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>Email: pylearn@email.com</p>
+    <p>&copy; 2025 PyLearn Team</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
