@@ -1,25 +1,49 @@
-/* --- BAGIAN 1: KALKULATOR LATIHAN --- */
-function hitung() {
-    // 1. Ambil elemen input
-    const input1 = document.getElementById('angka1');
-    const input2 = document.getElementById('angka2');
-    const hasilElement = document.getElementById('hasil');
+// --- SIMULASI PYTHON INPUT/OUTPUT ---
 
-    // 2. Validasi: Pastikan input tidak kosong
-    if (input1.value === '' || input2.value === '') {
-        hasilElement.innerText = "Mohon isi kedua angka!";
-        hasilElement.style.color = "red";
-        return; // Berhenti di sini jika kosong
-    }
+function runPython() {
+    const runBtn = document.getElementById('runBtn');
+    const outputDiv = document.getElementById('colabOutput');
+    const inputField = document.getElementById('pythonInput');
+    const finalResult = document.getElementById('finalResult');
 
-    // 3. Konversi ke angka (float)
-    const num1 = parseFloat(input1.value);
-    const num2 = parseFloat(input2.value);
+    // 1. Efek Loading pada tombol Play
+    runBtn.innerHTML = '<div class="spinning"></div>'; // Ubah icon jadi spinner
+    
+    // 2. Reset tampilan output
+    outputDiv.style.display = 'none';
+    finalResult.innerHTML = '';
+    inputField.value = '';
+    inputField.disabled = false;
 
-    // 4. Hitung dan Tampilkan
-    const total = num1 + num2;
-    hasilElement.innerText = total;
-    hasilElement.style.color = "#306998"; // Warna biru Python
+    // 3. Simulasi delay eksekusi (biar terasa seperti compile)
+    setTimeout(() => {
+        // Tampilkan area output
+        outputDiv.style.display = 'flex';
+        
+        // Kembalikan tombol ke icon Play
+        runBtn.innerHTML = '<i class="ri-play-fill"></i>';
+        
+        // Fokuskan kursor ke input box
+        inputField.focus();
+    }, 800);
+
+    // 4. Event Listener saat user menekan ENTER
+    inputField.onkeydown = function(event) {
+        if (event.key === "Enter") {
+            const nama = inputField.value;
+            
+        
+
+            // Matikan input field agar tidak bisa diedit lagi
+            inputField.disabled = true;
+            inputField.style.borderColor = "transparent";
+            inputField.style.background = "transparent";
+            inputField.style.paddingLeft = "0";
+
+            // Tampilkan hasil print f-string
+            finalResult.innerHTML = `Halo, ${nama}! Selamat belajar Python.`;
+        }
+    };
 }
 
 /* --- BAGIAN 2: POPUP TEAM (MODAL) --- */

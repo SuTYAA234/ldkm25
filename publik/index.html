@@ -3,141 +3,226 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PyLearn — Pelatihan Python Dasar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>PyLearn — Pelatihan Python Modern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="desain.css" />
 </head>
 <body>
 
-  <header>
-    <nav class="container">
-      <div class="logo">PyLearn.</div>
+  <header id="header">
+    <nav class="container nav-container">
+      <a href="#" class="logo">PyLearn<span class="dot">.</span></a>
+      
       <div class="nav-links">
-        <a href="#hero">Home</a>
-        <a href="#about">Tentang</a>
-        <a href="#materi">Materi</a>
-        <a href="#latihan">Latihan</a>
-        <a href="#team">Tim</a>
+        <a href="#hero" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">Tentang Python</a>
+        <a href="#materi" class="nav-item">Materi</a>
+        <a href="#team" class="nav-item">Tentang Kami</a>
       </div>
+      
+      <a href="#latihan" class="btn btn-primary nav-btn">Mulai Belajar</a>
     </nav>
   </header>
 
   <section id="hero">
-    <div class="container hero-content">
-      <h1>Belajar <span class="highlight">Python</span> Dasar Secara Interaktif</h1>
-      <p>Media pembelajaran modern cocok untuk pemula, mahasiswa, dan pelajar.</p>
-      <a href="#latihan" class="btn btn-primary">Coba Latihan Sekarang</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">Apa itu PyLearn?</h2>
-      <div class="about-content">
-        <p>
-          Website PyLearn merupakan website satu halaman (landing page) yang terdiri dari beberapa bagian utama.
-          Website ini dibangun menggunakan <strong>HTML</strong> sebagai struktur halaman, <strong>CSS</strong> sebagai pengatur tampilan, dan <strong>JavaScript</strong> sebagai pengelola interaksi pengguna.
-        </p>
-        <p>
-          Latihan interaktif pada website ini mensimulasikan konsep pemrograman Python, seperti operasi penjumlahan, dengan memanfaatkan logika JavaScript. Tujuannya agar pengguna dapat memahami konsep dasar pemrograman dengan mudah.
-        </p>
+    <div class="container hero-wrapper">
+      <div class="hero-content">
+        <h1>Kuasai <span class="gradient-text">Python</span> dengan Cara yang Menyenangkan.</h1>
+        <p>Platform pembelajaran interaktif yang dirancang khusus untuk pemula. Pelajari dasar pemrograman tanpa instalasi yang rumit.</p>
+        <div class="hero-buttons">
+          <a href="#latihan" class="btn btn-primary">Coba Demo <i class="ri-arrow-right-line"></i></a>
+          <a href="#materi" class="btn btn-secondary">Lihat Materi</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="blob"></div>
+        <div class="code-card-float">
+            <div class="code-header-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <p>print("Hello World!")</p>
+            <p>> Hello World!</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="materi" class="bg-light">
+  <section id="about" class="section-padding">
     <div class="container">
-      <h2 class="section-title">Materi Dasar</h2>
+      <div class="intro-grid">
+        
+        <div class="intro-content">
+          <span class="badge badge-yellow">Sejarah & Fakta</span>
+          <h2>Bahasa Pemrograman Paling Populer di Dunia</h2>
+          <p>
+            <strong>Python</strong> diciptakan oleh <em>Guido van Rossum</em> dan dirilis pada tahun <strong>1991</strong>. 
+            Nama "Python" diambil dari grup komedi Inggris favorit Guido, yaitu <em>"Monty Python's Flying Circus"</em>.
+          </p>
+          <p>
+            Filosofi utama Python adalah <strong>readability</strong> (mudah dibaca). Dengan sintaks yang mirip bahasa Inggris sederhana, Python menjadi pilihan utama di Google, NASA, hingga Netflix.
+          </p>
+        </div>
+
+        <div class="intro-features">
+          <div class="feature-box">
+            <div class="f-icon"><i class="ri-brain-line"></i></div>
+            <div class="f-text">
+              <h4>Artificial Intelligence (AI)</h4>
+              <p>Bahasa utama untuk Machine Learning & Data Science.</p>
+            </div>
+          </div>
+          
+          <div class="feature-box">
+            <div class="f-icon"><i class="ri-global-line"></i></div>
+            <div class="f-text">
+              <h4>Web Development</h4>
+              <p>Backend website yang kuat (Django, Flask).</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="f-icon"><i class="ri-robot-2-line"></i></div>
+            <div class="f-text">
+              <h4>Automation</h4>
+              <p>Membuat bot dan otomatisasi tugas repetitif.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="materi" class="bg-gray section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kurikulum Materi</h2>
+        <p>Disusun bertahap dari dasar hingga logika pemrograman.</p>
+      </div>
+      
       <div class="materi-grid">
         <div class="materi-card">
-          <h3>Variabel & Tipe Data</h3>
-          <p>Pelajari cara menyimpan data dalam variabel.</p>
+          <div class="icon-bg purple"><i class="ri-database-2-line"></i></div>
+          <h3>Variabel & Data</h3>
+          <p>Memahami wadah penyimpanan data dan jenis-jenis tipe data dalam Python.</p>
         </div>
         <div class="materi-card">
+          <div class="icon-bg blue"><i class="ri-terminal-box-line"></i></div>
           <h3>Input & Output</h3>
-          <p>Interaksi program dengan pengguna.</p>
+          <p>Belajar cara berinteraksi dengan pengguna melalui terminal.</p>
         </div>
         <div class="materi-card">
+          <div class="icon-bg orange"><i class="ri-git-branch-line"></i></div>
           <h3>Percabangan</h3>
-          <p>Logika If-Else untuk pengambilan keputusan.</p>
+          <p>Mengatur alur program menggunakan logika If, Elif, dan Else.</p>
         </div>
         <div class="materi-card">
+          <div class="icon-bg green"><i class="ri-loop-right-line"></i></div>
           <h3>Perulangan</h3>
-          <p>Looping menggunakan For dan While.</p>
+          <p>Melakukan tugas berulang secara otomatis dengan For dan While.</p>
         </div>
       </div>
 
-      <div class="code-preview">
-        <h4>Contoh Kode Python:</h4>
-        <pre><code>nama = input("Nama: ")
-print(f"Halo, {nama} selamat belajar!")</code></pre>
+      <div class="code-showcase">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="dots">
+              <span class="red"></span><span class="yellow"></span><span class="green"></span>
+            </div>
+            <span class="filename">main.py</span>
+            <button onclick="copyCode()" class="copy-btn"><i class="ri-file-copy-line"></i></button>
+          </div>
+          <div class="window-body">
+              <pre><code><span class="kwd">nama</span> = <span class="func">input</span>(<span class="str">"Siapa namamu? "</span>)
+              <span class="func">print</span>(<span class="str">f"Halo, <span class="var">{nama}</span>! Semangat belajar ya 🚀"</span>)</code></pre>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <section id="latihan">
+  <section id="latihan" class="section-padding bg-dark-colab">
     <div class="container">
-      <h2 class="section-title">Latihan Interaktif</h2>
-      <p class="subtitle">Simulasi penjumlahan sederhana ala Python</p>
-      
-      <div class="calculator-box">
-        <div class="input-group">
-          <input type="number" id="angka1" placeholder="Masukkan Angka 1" />
-          <span class="operator">+</span>
-          <input type="number" id="angka2" placeholder="Masukkan Angka 2" />
-        </div>
-        <button onclick="hitung()" class="btn btn-accent">Jalankan Kode</button>
+      <div class="section-header text-center text-white">
+        <h2>Latihan Input & Output</h2>
+      </div>
+
+      <div class="colab-container">
         
-        <div id="hasil-container">
-          Hasil: <span id="hasil">...</span>
+        <div class="colab-cell code-cell">
+          <div class="gutter">
+            <button id="runBtn" class="run-btn" onclick="runPython()">
+              <i class="ri-play-fill"></i>
+            </button>
+          </div>
+          <div class="editor-area">
+            <pre><code><span class="kwd">print</span>(<span class="str">"--- Program Sapaan ---"</span>)
+            <span class="var">nama</span> = <span class="func">input</span>(<span class="str">"Siapa namamu ? "</span>)
+            <span class="func">print</span>(<span class="str">f"Halo, <span class="var">{nama}</span>! Selamat belajar Python."</span>)</code></pre>
+          </div>
         </div>
+
+        <div id="colabOutput" class="colab-cell output-cell" style="display: none;">
+          <div class="output-line">--- Program Sapaan ---</div>
+          
+          <div id="inputLine" class="input-line">
+            <span class="prompt-text">Siapa namamu ? </span>
+            <input type="text" id="pythonInput" class="colab-input" autocomplete="off">
+          </div>
+
+          <div id="finalResult" class="output-line result-text"></div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  
-  <section id="team" class="bg-light">
+  <section id="team" class="bg-light section-padding">
     <div class="container">
-      <h2 class="section-title">Tim Kami</h2>
+      <div class="section-header text-center">
+        <h2>Tim Kami</h2>
+      </div>
       <div class="team-wrapper">
         <div class="card">
-          <img src="foto/MUKA.jpg">
+          <img src="foto/MUKA.jpg" alt="Rivan">
           <h4>Muhammad Rivan Surya</h4>
           <p>I.2510393</p>
         </div>
         <div class="card">
-          <img src="foto/intan.jpg" >
-          <h4>Intan Khalimatu Sa'diyah</h4>
+          <img src="foto/intan.jpg" alt="Intan">
+          <h4>Intan Khalimatu S.</h4>
           <p>I.2510261</p>
         </div>
         <div class="card">
-          <img src="foto/jalal.jpeg" >
+          <img src="foto/jalal.jpeg" alt="Jalal">
           <h4>Jalal</h4>
           <p>I.2510109</p>
         </div>
         <div class="card">
-          <img src="foto/aflida.jpg" >
+          <img src="foto/aflida.jpg" alt="Alfida">
           <h4>Alfida Khaira Annas</h4>
           <p>I.2510002</p>
         </div>
         <div class="card">
-          <img src="foto/farhan.jpg" >
-          <h4>Muhamad Abdullah Farhan</h4>
-          <p>KETUA</p>
+          <img src="foto/farhan.jpg" alt="Farhan">
+          <h4>M. Abdullah Farhan</h4>
           <p>I.2510738</p>
+          <p style="color:var(--primary); font-size:0.8rem; margin-top:5px;">KETUA</p>
         </div>
         <div class="card">
-          <img src="foto/abing.jpg" >
-          <h4>Muhammad Zibril Tafa Tabia</h4>
+          <img src="foto/abing.jpg" alt="Abing">
+          <h4>M. Zibril Tafa Tabia</h4>
           <p>I.2510056</p>
         </div>
         <div class="card">
-          <img src="foto/ridhi.jpeg" >
-          <h4>Muhammad Ridho Ramadhan</h4>
+          <img src="foto/ridhi.jpeg" alt="Ridho">
+          <h4>M. Ridho Ramadhan</h4>
           <p>I.2510184</p>
         </div>
         <div class="card">
-          <img src="foto/SSA.jpg" >
+          <img src="foto/SSA.jpg" alt="Aji">
           <h4>Aji Cahya Mustaqim</h4>
           <p>I.2510161</p>
         </div>
@@ -145,21 +230,48 @@ print(f"Halo, {nama} selamat belajar!")</code></pre>
     </div>
   </section>
 
-  <footer id="footer">
-    <div class="container">
-      <p>&copy; 2025 <strong>Ruby</strong>.</p>
+  <div id="modalTeam" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImg" src="" alt="Foto Tim" />
+      <h3 id="modalName">Nama Anggota</h3>
+      <p id="modalNim">NIM</p>
+    </div>
+  </div>
+
+<footer id="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-left">
+        <h3 class="footer-logo">PyLearn<span class="dot">.</span></h3>
+        <p class="footer-desc">
+          Platform edukasi pemrograman Python yang dirancang interaktif untuk pemula. Belajar koding jadi lebih mudah dan menyenangkan.
+        </p>
+        <p class="copyright">&copy; 2025 Kelompok <strong>Ruby</strong>.</p>
+      </div>
+
+      <div class="footer-right">
+        
+        <h4>Hubungi Kami</h4>
+        <div class="address-box">
+    <a href="https://maps.google.com/?q=Jl.+Tol+Ciawi+No.1+Bogor" target="_blank" class="address-link">
+        <i class="ri-map-pin-fill"></i>
+        <span>Jl. Tol Ciawi No.1 Bogor 16720<br>JAWA BARAT, INDONESIA</span>
+    </a>
+</div>
+
+        <h4 class="repo-title">Project Repository</h4>
+        <p class="repo-desc">Lihat kode sumber website ini di GitHub kami:</p>
+        <a href="https://github.com/SuTYAA234/ldkm25.git" target="_blank" class="github-btn">
+          <i class="ri-github-fill"></i>
+          <span>Buka di GitHub</span>
+        </a>
+      </div>
+
     </div>
   </footer>
 
-<div id="modalTeam" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <img id="modalImg" src="" alt="Foto Tim" />
-    <h3 id="modalName">Nama Anggota</h3>
-    <p id="modalNim">NIM</p>
-  </div>
-</div>
-
   <script src="script.js"></script>
+
 </body>
 </html>
