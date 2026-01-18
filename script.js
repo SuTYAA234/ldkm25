@@ -43,7 +43,6 @@ function runPython() {
         }
     };
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     
     const modal = document.getElementById("modalTeam");
